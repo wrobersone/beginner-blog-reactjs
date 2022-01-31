@@ -1,9 +1,10 @@
 import React from 'react';
+import './styles.css';
 
-const SearchBar = ({ value, handleSearchBtn, clearSearch }) => {
+const SearchBar = ({ value, handleSearchBtn, clearSearch, formSubmit }) => {
   return (
     <div className='searchBar-wrap'>
-        <form>
+        <form onSubmit={formSubmit}>
             <input 
                 type="text" 
                 onChange={handleSearchBtn} 

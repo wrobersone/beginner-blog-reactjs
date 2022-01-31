@@ -20,7 +20,7 @@ const Blog = () => {
 
   return (
     <div>
-        <Link to='/'> <span>&#8592;</span> Go Back </Link>
+        <Link to='/' className='blog-goBack'> <span>&#8592;</span> Go Back </Link>
         {
           blog ? (<div className='blog-wrap'>
             <header>
